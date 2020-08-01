@@ -1,0 +1,60 @@
+mic   _utils.py          INFO     Log file created
+mic   _utils.py          INFO     OS: {'name': 'Darwin', 'data': {'version': 'Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64', 'release': '19.5.0', 'platform': 'macOS-10.15.5-x86_64-i386-64bit'}}
+mic   _utils.py          INFO     MIC Version: 1.3.2
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'start', 'command_parameters': {'name': {'value': 'pick_property', 'type': 'str'}, 'image': {'value': None, 'type': 'NoneType'}}}
+mic   initialization.py  INFO     When creating base dir found base directory already exists: /Users/taccstaff/Flooded_lots/pick_property/mic
+mic   initialization.py  INFO     MIC has initialized the component
+mic   initialization.py  DEBUG    detecting framework(s): [<Framework.GENERIC: ('general', 'mintproject/generic:latest')>, <Framework.PYTHON37: ('python3.7', 'mintproject/python:3.7', '.py')>, <Framework.PYTHON38: ('python3.8', 'mintproject/python:3.8', '.py')>, <Framework.CONDA: ('conda4.7.12', 'mintproject/conda:4.7.12', '.py')>]
+mic   initialization.py  DEBUG    OS name: darwin
+mic   docker.py          INFO     Downloading and building base docker image
+mic   commands.py        DEBUG    Converting any CRLF to LF: ['mic.log', 'mic.yaml', 'Dockerfile', 'entrypoint.sh']
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/taccstaff/Flooded_lots/pick_property/mic/mic.yaml', 'data': {'key': 'name', 'value': 'pick_property'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/taccstaff/Flooded_lots/pick_property/mic/mic.yaml', 'data': {'key': 'docker_image', 'value': 'pick_property:latest'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/taccstaff/Flooded_lots/pick_property/mic/mic.yaml', 'data': {'key': 'framework', 'value': <Framework.CONDA: ('conda4.7.12', 'mintproject/conda:4.7.12', '.py')>}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/taccstaff/Flooded_lots/pick_property/mic/mic.yaml', 'data': {'key': 'container_name', 'value': 'pick_property_7f65b3a2'}}
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'trace', 'command_parameters': {'invocation_command': {'value': ('python', 'pick_property.py'), 'type': 'tuple'}, 'continu': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Append mode: None
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'trace', 'command_parameters': {'invocation_command': {'value': ('python', 'pick_property.py'), 'type': 'tuple'}, 'continu': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Append mode: None
+mic   commands.py        INFO     trace done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'inputs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'custom_inputs': {'value': (), 'type': 'tuple'}}}
+mic   commands.py        DEBUG    Inputs found from reprozip: ['/tmp/mint/ATX_Lot_line.dbf', '/tmp/mint/ATX_Lot_line.cpg', '/tmp/mint/ATX_Lot_line.prj', '/tmp/mint/ATX_Lot_line.shx', '/tmp/mint/pick_property.py', '/tmp/mint/ATX_Lot_line.shp', '/tmp/mint/Output']
+mic   reprozip.py        DEBUG    Adding executable: pick_property.py
+mic   commands.py        DEBUG    code files found from reprozip: ['/tmp/mint/pick_property.py']
+mic   commands.py        INFO     Input added: ATX_Lot_line.dbf
+mic   commands.py        INFO     Input added: ATX_Lot_line.cpg
+mic   commands.py        INFO     Input added: ATX_Lot_line.prj
+mic   commands.py        INFO     Input added: ATX_Lot_line.shx
+mic   commands.py        INFO     Ignoring the config as an input: /tmp/mint/pick_property.py
+mic   commands.py        INFO     Input added: ATX_Lot_line.shp
+mic   commands.py        INFO     Skipping: /tmp/mint/Output
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'inputs', 'value': {'atx_lot_line_dbf': {'path': 'ATX_Lot_line.dbf', 'format': 'dbf'}, 'atx_lot_line_cpg': {'path': 'ATX_Lot_line.cpg', 'format': 'cpg'}, 'atx_lot_line_prj': {'path': 'ATX_Lot_line.prj', 'format': 'prj'}, 'atx_lot_line_shx': {'path': 'ATX_Lot_line.shx', 'format': 'shx'}, 'atx_lot_line_shp': {'path': 'ATX_Lot_line.shp', 'format': 'shp'}}}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'code_files', 'value': {'pick_property_py': {'path': 'pick_property.py', 'format': 'py'}}}}
+mic   commands.py        INFO     inputs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'outputs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'custom_outputs': {'value': (), 'type': 'tuple'}}}
+mic   commands.py        DEBUG    Outputs found from reprozip: ['/tmp/mint/Output/random_property.dbf', '/tmp/mint/Output/random_property.shp', '/tmp/mint/Output/random_property.cpg', '/tmp/mint/Output/random_property.prj', '/tmp/mint/Output/random_property.shx']
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'outputs', 'value': {'random_property_dbf': {'path': 'Output/random_property.dbf', 'format': 'dbf'}, 'random_property_shp': {'path': 'Output/random_property.shp', 'format': 'shp'}, 'random_property_cpg': {'path': 'Output/random_property.cpg', 'format': 'cpg'}, 'random_property_prj': {'path': 'Output/random_property.prj', 'format': 'prj'}, 'random_property_shx': {'path': 'Output/random_property.shx', 'format': 'shx'}}}}
+mic   commands.py        INFO     outputs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\npython pick_property.py\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        INFO     wrapper done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'run', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Run passed
+mic   commands.py        INFO     run done
+mic   commands.py        INFO     start done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/Users/taccstaff/Flooded_lots/pick_property/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'default', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit

@@ -1,0 +1,45 @@
+step: 1
+name: pick_property
+docker_image: pick_property:latest
+framework: !!python/object/apply:mic.constants.Framework
+- !!python/tuple
+  - conda4.7.12
+  - mintproject/conda:4.7.12
+  - .py
+container_name: pick_property_7f65b3a2
+inputs:
+  atx_lot_line_dbf:
+    path: ATX_Lot_line.dbf
+    format: dbf
+  atx_lot_line_cpg:
+    path: ATX_Lot_line.cpg
+    format: cpg
+  atx_lot_line_prj:
+    path: ATX_Lot_line.prj
+    format: prj
+  atx_lot_line_shx:
+    path: ATX_Lot_line.shx
+    format: shx
+  atx_lot_line_shp:
+    path: ATX_Lot_line.shp
+    format: shp
+code_files:
+  pick_property_py:
+    path: pick_property.py
+    format: py
+outputs:
+  random_property_dbf:
+    path: Output/random_property.dbf
+    format: dbf
+  random_property_shp:
+    path: Output/random_property.shp
+    format: shp
+  random_property_cpg:
+    path: Output/random_property.cpg
+    format: cpg
+  random_property_prj:
+    path: Output/random_property.prj
+    format: prj
+  random_property_shx:
+    path: Output/random_property.shx
+    format: shx

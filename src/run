@@ -1,0 +1,33 @@
+#!/bin/bash
+set +x
+set -e
+. .colors.sh
+
+BASEDIR=$PWD
+. $BASEDIR/io.sh 5 0 5 "$@"
+CURDIR=`pwd`
+## INPUTS VARIABLES
+atx_lot_line_dbf=${INPUTS1}
+atx_lot_line_cpg=${INPUTS2}
+atx_lot_line_prj=${INPUTS3}
+atx_lot_line_shx=${INPUTS4}
+atx_lot_line_shp=${INPUTS5}
+
+
+## PARAMETERS VARIABLES
+
+
+set -xe
+
+####### WRITE YOUR INVOCATION LINE AFTER THIS COMMENT
+
+    
+pushd .
+python pick_property.py
+popd
+
+set +x
+echo -e "$(c G)[success] The model has exited with code SUCCESS"
+####### WRITE YOUR INVOCATION LINE BEFORE THIS COMMENT
+cd $BASEDIR
+. $BASEDIR/output.sh
